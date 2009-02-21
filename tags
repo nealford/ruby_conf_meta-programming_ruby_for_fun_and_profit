@@ -1,0 +1,359 @@
+
+aop/alias_method.rb,161
+class CustomerCustomer1,0
+  def updateupdate2,15
+class CustomerCustomer7,48
+  def updateupdate9,92
+class CustomerCustomer15,164
+  def savesave17,224
+
+aop/around_method_pointcut.rb,215
+class LogLog3,21
+  def write(msg)write5,51
+module AopAop11,93
+  def Aop.included(into)included12,104
+    def into.method_added(meth)method_added15,201
+  def Aop.hook_method(klass, meth)hook_method24,362
+
+aop/facets_aop.rb,77
+class FF4,37
+  def f ; "f" ; endf5,45
+  def f;'<'+super+'>' ; endf9,84
+
+aop/modularization.rb,294
+class PersonPerson1,0
+  def initialize nameinitialize4,36
+class EntityObserverEntityObserver9,86
+  def receive_update subjectreceive_update10,107
+module SubjectSubject15,190
+  def add_observer observeradd_observer16,205
+  def notify subjectnotify23,394
+class PersonPerson28,479
+
+aop/old_fashioned_logging.rb,72
+class OldFashionedOldFashioned3,34
+  def some_methodsome_method4,53
+
+aop/test_around_method_pointcut.rb,344
+class TestAroundMethodPointcut < Test::Unit::TestCaseTestAroundMethodPointcut5,86
+  def test_oldfasioned_loggingtest_oldfasioned_logging7,141
+  class SubjectSubject13,223
+    def persist_infopersist_info15,255
+    def non_persist_infonon_persist_info19,325
+  def test_methods_with_wrapped_namestest_methods_with_wrapped_names24,409
+
+builder/blankslate.rb,456
+class BlankSlateBlankSlate17,621
+    def hide(name)hide22,788
+    def find_hidden_method(name)find_hidden_method31,1032
+    def reveal(name)reveal38,1268
+module KernelKernel59,2019
+    def method_added(name)method_added65,2195
+class ObjectObject77,2474
+    def method_added(name)method_added83,2649
+    def find_hidden_method(name)find_hidden_method90,2810
+class ModuleModule103,3241
+  def append_features(mod)append_features105,3314
+
+builder/less_simple_builder.rb,0
+
+builder/simple_builder.rb,0
+
+command_wrapper/command_wrapper.rb,96
+class CommandWrapperCommandWrapper1,0
+  def method_missing(method, *args)method_missing2,21
+
+command_wrapper/command_wrapper_test.rb,235
+def wrap(&b)wrap5,48
+    def write(message)write9,129
+class TestCommandWrapper < Test::Unit::TestCaseTestCommandWrapper21,261
+  def setupsetup23,312
+  def test_current_datetest_current_date27,362
+  def test_lstest_ls32,463
+
+comparisons/comparison.rb,90
+class PersonPerson1,0
+  def initialize(name)initialize5,57
+  def <=>(other)<=>9,106
+
+comparisons/comparison_test.rb,164
+class TestComparison < Test::Unit::TestCaseTestComparison4,42
+  def setupsetup6,89
+  def test_comparison_works_correctlytest_comparison_works_correctly13,232
+
+decorator/recorder.rb,169
+class RecorderRecorder1,0
+  def initializeinitialize2,15
+  def method_missing(method, *args, &block)method_missing6,60
+  def play_back_to(obj)play_back_to10,158
+
+decorator/recorder2.rb,186
+class Recorder2 < BlankSlateRecorder23,59
+  def initializeinitialize4,88
+  def method_missing(method, *args, &block)method_missing8,133
+  def play_back_to(obj)play_back_to12,231
+
+decorator/recorder_test.rb,296
+class TestRecorder < Test::Unit::TestCaseTestRecorder5,60
+  def test_recordertest_recorder6,102
+  def test_recorder_fails_when_existing_methods_calledtest_recorder_fails_when_existing_methods_called18,336
+  def test_recorder_works_with_blankslatetest_recorder_works_with_blankslate30,578
+
+dust/dust_example.rb,0
+
+dust/lang_files_test.rb,0
+
+dust/manufacturer_color_test.rb,0
+
+dust/object_extension.rb,367
+class ObjectObject1,0
+  def unit_tests(options={}, &block)unit_tests15,543
+  def functional_tests(options={}, &block)functional_tests32,1212
+  def do_tests(type, options, &block) #:nodoc:do_tests37,1321
+  def check_for_setup(test_class, options) #:nodoc:check_for_setup47,1768
+  def check_for_helpers(test_class, options) #:nodoc:check_for_helpers54,2072
+
+freezing/freeze_test.rb,363
+class TestFreezing < Test::Unit::TestCaseTestFreezing3,21
+  def test_string_freezingtest_string_freezing4,63
+  def test_array_freezingtest_array_freezing12,230
+  def test_hash_freezingtest_hash_freezing20,357
+  def test_mutating_value_instead_of_referencetest_mutating_value_instead_of_reference28,507
+  def test_frozen_clonestest_frozen_clones35,660
+
+grades/grades.rb,68
+class GradeGrade1,0
+    def for_score_of(grade)for_score_of3,28
+
+grades/test_grades.rb,205
+class TestGrades < Test::Unit::TestCaseTestGrades6,40
+  def test_not_an_integertest_not_an_integer26,471
+  def test_letterstest_letters31,568
+  def test_numerical_gradestest_numerical_grades38,720
+
+immutable_string/immutable_string.rb,178
+class ImmutableStringImmutableString1,0
+  def initialize(s)initialize4,46
+  def +(other)+8,97
+  def <<(addition)<<12,157
+  def to_sto_s16,217
+  def ==(other)==20,253
+
+immutable_string/test_immutable_string.rb,489
+class TestImmutableString < Test::Unit::TestCaseTestImmutableString4,48
+  def test_strings_have_the_same_object_idtest_strings_have_the_same_object_id6,98
+  def test_that_immutable_strings_are_immutabletest_that_immutable_strings_are_immutable12,278
+  def test_all_equals_methods_think_it_is_equaltest_all_equals_methods_think_it_is_equal19,439
+  def test_that_it_acts_like_a_string_sometimestest_that_it_acts_like_a_string_sometimes27,670
+  def test_chevrontest_chevron34,857
+
+immutable_string/test_opened_immutable_string.rb,201
+class TestUnupdateableString < Test::Unit::TestCaseTestUnupdateableString5,51
+  def test_other_methodstest_other_methods7,106
+  def test_that_methods_still_worktest_that_methods_still_work18,313
+
+immutable_string/unupdatable_string.rb,24
+class StringString1,0
+
+interpreter_code/object_extension.rb,255
+module ObjectExtensionObjectExtension1,0
+  def eigenclass; class << self; self; end; endeigenclass3,26
+  def eigen_eval &blk; eigen_class.instance_eval &blk; endeigen_eval5,78
+  def self.included(klass)included7,138
+  def not_nil?not_nil?11,208
+
+interpreter_code/person.rb,59
+  def initialize nameinitialize4,45
+  def namename8,91
+
+interpreter_code/test_object_extension.rb,161
+class TestObjectExtension < Test::Unit::TestCaseTestObjectExtension4,48
+  def test_that_object_has_extended_methodstest_that_object_has_extended_methods6,98
+
+messages/messages_test.rb,287
+class TestMessages < Test::Unit::TestCaseTestMessages3,21
+  def test_messages_equal_method_callstest_messages_equal_method_calls4,63
+  def test_constructiontest_construction12,439
+  def create_from_factory(factory)create_from_factory20,578
+  def test_factorytest_factory24,636
+
+methods/currying.rb,150
+def tell_fortunes &blocktell_fortunes1,0
+class ProcProc17,296
+  def curry(*args)curry19,308
+def curried_fortunes &blockcurried_fortunes45,962
+
+mixology/door.rb,291
+class DoorDoor1,0
+  def initialize(open = false)initialize3,12
+    def closed?closed?10,115
+    def opened?opened?14,166
+  module ClosedClosed20,224
+    def knockknock21,240
+    def openopen25,289
+  module OpenOpen30,337
+    def knockknock31,351
+    def closeclose35,438
+
+mixology/door_mix.rb,238
+class DoorDoor4,39
+  def initialize(open = false)initialize5,50
+    def closed?closed?13,164
+    def opened?opened?17,215
+  module ClosedClosed22,268
+    def openopen23,284
+  module OpenOpen29,350
+    def closeclose30,364
+
+mixology/door_mix_test.rb,536
+class DoorMixTest < Test::Unit::TestCaseDoorMixTest4,40
+  def test_an_open_door_is_opened_and_not_closedtest_an_open_door_is_opened_and_not_closed5,81
+  def test_a_closed_door_is_closed_and_not_openedtest_a_closed_door_is_closed_and_not_opened11,212
+  def test_closing_an_open_door_makes_the_door_closed_but_not_openedtest_closing_an_open_door_makes_the_door_closed_but_not_opened17,338
+  def test_opening_a_closed_door_makes_the_door_opened_but_not_closedtest_opening_a_closed_door_makes_the_door_opened_but_not_closed24,504
+
+mixology/door_test.rb,530
+class DoorTest < Test::Unit::TestCaseDoorTest4,36
+  def test_an_open_door_is_opened_and_not_closedtest_an_open_door_is_opened_and_not_closed5,74
+  def test_a_closed_door_is_closed_and_not_openedtest_a_closed_door_is_closed_and_not_opened11,205
+  def test_closing_an_open_door_makes_the_door_closed_but_not_openedtest_closing_an_open_door_makes_the_door_closed_but_not_opened17,331
+  def test_opening_a_closed_door_makes_the_door_opened_but_not_closedtest_opening_a_closed_door_makes_the_door_opened_but_not_closed24,497
+
+open_classes/blankness.rb,49
+class StringString1,0
+  def blank?blank?2,13
+
+open_classes/blankness_test.rb,87
+class BlankTest < Test::Unit::TestCaseBlankTest4,41
+  def test_blanktest_blank5,80
+
+open_classes/conditional_open_string.rb,349
+  class StringString4,21
+    def dancedance5,36
+   class StringString12,100
+     def touch_monkeytouch_monkey13,116
+class TestOpenedString < Test::Unit::TestCaseTestOpenedString21,220
+  def test_dancingtest_dancing22,266
+  def test_changing_flag_has_no_effecttest_changing_flag_has_no_effect27,408
+  def test_monkeytest_monkey33,626
+
+open_classes/final.rb,100
+module FinalFinal1,0
+  def self.included(c)included2,13
+      def inherited(sub)inherited4,59
+
+open_classes/final_test.rb,118
+class TestFinal < Test::Unit::TestCaseTestFinal5,38
+  class P; include Final; endP6,77
+  class C < P; endC8,110
+
+open_classes/rot13_encryption.rb,181
+class StringString1,0
+  def rot(num = 13)rot2,13
+class TestRot13Encryption < Test::Unit::TestCaseTestRot13Encryption20,330
+  def test_simple_stringtest_simple_string41,1138
+
+quantifier/counting_quantifier.rb,205
+module QuantifierQuantifier1,0
+  def Quantifier.append_features(targetClass)append_features4,46
+    def targetClass.quantified_countquantified_count5,92
+  def any?any?11,181
+  def all?all?19,296
+
+quantifier/counting_quantifier_test.rb,227
+class ArrayArray4,51
+class TestCountingQuantifier < Test::Unit::TestCaseTestCountingQuantifier8,89
+  def setupsetup10,144
+  def test_everything_because_order_now_matters!test_everything_because_order_now_matters!18,258
+
+quantifier/quantifier.rb,75
+module QuantifierQuantifier1,0
+  def any?any?2,18
+  def all?all?6,85
+
+quantifier/quantifier_test.rb,174
+class ArrayArray4,42
+class TestQuantifier < Test::Unit::TestCaseTestQuantifier8,81
+  def setupsetup10,128
+  def test_anytest_any17,211
+  def test_alltest_all22,308
+
+quantifier/quantifier_test_with_extension.rb,176
+class TestQuantifierWithExtension < Test::Unit::TestCaseTestQuantifierWithExtension4,42
+  def setupsetup6,102
+  def test_anytest_any14,214
+  def test_alltest_all19,311
+
+queue/forward_queue.rb,66
+class FQueueFQueue3,23
+  def initialize(obj=[])initialize6,60
+
+queue/forward_queue_test.rb,461
+class TestForwardQueue < Test::Unit::TestCaseTestForwardQueue6,63
+  def setupsetup8,112
+  def test_queuetest_queue14,191
+  def test_delegated_methodstest_delegated_methods19,291
+  def test_non_delegated_methodstest_non_delegated_methods34,596
+  def test_delegating_to_arraytest_delegating_to_array38,681
+  def test_delegating_to_a_queuetest_delegating_to_a_queue46,845
+  def test_delgating_to_a_sized_queuetest_delgating_to_a_sized_queue54,1007
+
+queue/queue.rb,103
+class DelegateQueue < DelegateClass(Array)DelegateQueue3,20
+  def initialize(arg=[])initialize4,63
+
+queue/queue_test.rb,197
+class TestLimitedQueue < Test::Unit::TestCaseTestLimitedQueue4,37
+  def setupsetup6,86
+  def test_queuingtest_queuing12,176
+  def test_non_delegated_methodstest_non_delegated_methods17,249
+
+reflection/reflection.rb,140
+class PhotographerPhotographer1,0
+   def shootshoot2,19
+class GangsterGangster7,66
+   def shootshoot8,81
+class HackerHacker13,135
+
+reflection/simple_factory.rb,57
+def create_from_factory(factory)create_from_factory1,0
+
+singleton/accessor_string.rb,121
+class PersonPerson1,0
+   def self.accessor_string(*names)accessor_string3,16
+   def initizializeinitizialize13,197
+
+singleton/accessor_string_test.rb,107
+class TestAccessorString < Test::Unit::TestCaseTestAccessorString6,49
+  def test_persontest_person7,97
+
+singleton/accessor_string_with_metaaid.rb,117
+class PersonPerson3,19
+    def accessor_string(*names)accessor_string6,62
+  def initizializeinitizialize17,243
+
+singleton/accessor_string_with_metaaid_test.rb,108
+class TestAccessorString < Test::Unit::TestCaseTestAccessorString5,61
+  def test_persontest_person6,109
+
+singleton/arraylist_proxy.rb,54
+class ArrayListArrayList5,53
+  def firstfirst6,69
+
+singleton/arraylist_proxy_test.rb,276
+class TestArrayListProxy < Test::Unit::TestCaseTestArrayListProxy4,47
+  def setupsetup5,95
+  def test_firsttest_first13,247
+  def test_lasttest_last17,309
+  def test_that_last_does_not_exist_for_other_instancestest_that_last_does_not_exist_for_other_instances21,370
+
+singleton/metaaid.rb,55
+class ObjectObject1,0
+  def metaclassmetaclass2,13
+
+singleton/object_extension.rb,249
+module ObjectExtensionObjectExtension1,0
+  def metaclass; class << self; self; end; endmetaclass3,26
+  def meta_eval &blk; metaclass.instance_eval &blk; endmeta_eval5,77
+  def self.included(klass)included7,134
+  def not_nil?not_nil?11,204

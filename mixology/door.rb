@@ -1,0 +1,39 @@
+class Door
+
+  def initialize(open = false)
+    if open
+      extend Open
+    else
+      extend Closed
+    end
+    
+    def closed?
+      kind_of? Closed
+    end
+    
+    def opened?
+      kind_of? Open
+    end
+    
+  end
+  
+  module Closed
+    def knock
+      puts "knock, knock"
+    end
+
+    def open
+      extend Open
+    end
+  end
+  
+  module Open
+    def knock
+      raise "cannot knock on an open door, just come on in"
+    end
+    
+    def close
+      extend Closed
+    end
+  end
+end
